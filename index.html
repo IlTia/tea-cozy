@@ -2,8 +2,94 @@
 <html>
   <head>
     <title>Tea Cozy</title>
+    <link href="./files/style.css" type="text/css" rel="stylesheet">
   </head>
   <body>
-    <h1>Hello World</h1>
-  </body>
+      <!--Header con posizione fissa-->
+      <header>
+        <div class="logo">
+          <img src="./files/images/img-tea-cozy-logo.png" alt="">
+        </div>
+        <nav><!--verifica che i link puntino alle sezioni del sito-->
+          <span class"menu-nav"><a href="#title" target="_blank">Mission</a></span>
+          <span class"menu-nav"><a href="#main" target="_blank">Featured</a></span>
+          <span class"menu-nav"><a href="#locations" target="_blank">Locations</a></span>
+        </nav>
+      </header>
+      <!--Our mission, flex con immagine di sfondo e riquadro nero allineato verticalmente-->
+      <div class="container">
+        <div id="title">
+          <div class="title-box">
+            <h2>Our Mission</h2>
+            <h4>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
+          </div>
+        </div>
+        <!--Contenuto principale: flex largo 1000px, cinque elementi = wrap-->
+        <div id="main">
+          <div class="main-title">
+            <h2>Tea of the Month</h2>
+            <h4>What's Steeping at The Tea Cozy?</h4>
+          </div>
+          <div class="tea-wrap">
+            <div class="tea-box">
+              <img src="./files/images/img-berryblitz.jpg" alt="">
+              <h4>Fall Berry Blitz Tea</h4>
+            </div>
+            <div class="tea-box">
+              <img src="./files/images/img-spiced-rum.jpg" alt="">
+              <h4>Spiced Rum Tea</h4>
+            </div>
+            <div class="tea-box">
+              <img src="./files/images/img-donut.jpg" alt="">
+              <h4>Seasonal Donuts</h4>
+            </div>
+            <div class="tea-box">
+              <img src="./files/images/img-myrtle-ave.jpg" alt="">
+              <h4>Myrtle Ave tea</h4>
+            </div>
+            <div class="tea-box">
+              <img src="./files/images/img-bedford-bizarre.jpg" alt="">
+              <h4>Bedford Bizarre Tea</h4>
+            </div>
+          </div>
+        </div>
+        <!--Location: flex con immagine di sfondo e due elementi: div per location + div per i tre indirizzi-->
+        <div id="locations">
+          <div class="location-title">
+            <h2>Locations</h2>
+          </div>
+          <div class="addresses">
+            <div class="address-box"><!--Da ripetere tre volte con allineamento orizzontale tra i tre e allineamento in colonna tra gli span-->
+              <h3>Downtown</h3>
+              <span>384 West 4th St</span>
+              <span>Suite 108</span>
+              <span>Portland, Maine</span>
+            </div>
+            <div class="address-box"><!--Da ripetere tre volte con allineamento orizzontale tra i tre e allineamento in colonna tra gli span-->
+              <h3>East Bayside</h3>
+              <span>3433 Phisherman's Avenue</span>
+              <span>(Northwest Corner)</span>
+              <span>Portland, Maine</span>
+            </div>
+            <div class="address-box"><!--Da ripetere tre volte con allineamento orizzontale tra i tre e allineamento in colonna tra gli span-->
+              <h3>Oakdale</h3>
+              <span>515 Crescent Avenue</span>
+              <span>Second Floor</span>
+              <span>Portland, Maine</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Footer: un div per info centrate, un div per copyright allineato sx-->
+      <footer>
+        <div class="contacts">
+          <h2>The Tea Cozy</h2>
+          <h5>contact@theteacozy.com</h5>
+          <h5>917-555-8904</h5>
+        </div>
+        <div class="copyright">
+          <span>copyright The Tea Cozy 2017</span>
+        </div>
+      </footer>
+    </body>
 </html>
